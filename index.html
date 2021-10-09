@@ -24,11 +24,12 @@
     </div>
     <script>
       var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/TestMobileWeb.loader.js";
+      var loaderUrl = buildUrl + "/TestMobileWeb.asm.loader.js";
       var config = {
         dataUrl: buildUrl + "/TestMobileWeb.data.gz",
-        frameworkUrl: buildUrl + "/TestMobileWeb.framework.js.gz",
-        codeUrl: buildUrl + "/TestMobileWeb.wasm.gz",
+        frameworkUrl: buildUrl + "/TestMobileWeb.asm.framework.js.gz",
+        codeUrl: buildUrl + "/TestMobileWeb.asm.js.gz",
+        memoryUrl: buildUrl + "/TestMobileWeb.asm.mem.gz",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "DefaultCompany",
         productName: "TestMeasurements",
