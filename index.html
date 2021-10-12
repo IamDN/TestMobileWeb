@@ -20,11 +20,12 @@
        </div>
            <div id="label-progress"></div>
 
-     <script src="https://unpkg.com/jspdf@latest/dist/jspdf.umd.min.js"></script>
-     import { jsPDF } from "jspdf";
-     var  doc = new jsPDF();
-     doc.text("Hello world!", 10, 10);
-    doc.save("a4.pdf");
+    // Default export is a4 paper, portrait, using milimeters for units
+   var doc = new jsPDF()
+
+   doc.text('Hello world!', 10, 10)
+   doc.save('a4.pdf')
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.5/jspdf.debug.js"></script>
     <!-- Loading of unity webGL TODO: Move to separate file-->
     <script>
          var buildUrl = "Build";
