@@ -20,11 +20,8 @@
        </div>
            <div id="label-progress"></div>
 
-   var doc = new jsPDF()
-   doc.text('Hello world!', 10, 10)
-   window.alert(doc);
-   doc.save('a4.pdf')
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.5/jspdf.debug.js"></script>
+
+
     <!-- Loading of unity webGL TODO: Move to separate file-->
     <script>
          var buildUrl = "Build";
@@ -71,6 +68,10 @@
        };
      document.body.appendChild(script);
     </script>
-
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.5/jspdf.debug.js"></script>
+     var doc = new jsPDF()
+   doc.text('Hello world!', 10, 10)
+   window.alert(doc);
+   doc.save('a4.pdf')
   </body>
 </html>
