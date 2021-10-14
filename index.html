@@ -21,43 +21,7 @@
        </div>
            <div id="label-progress"></div>
 
-  <script>
-  console.log("Start");
 
-      let array= new Array (1, 0.1, 0.1, 4, 5, 0.2,7,8,9);
-     var size = 9;
-     width =3;
-     height = 3;
- 
-    // Create canvas
-    canvas = document.createElement('canvas'),
-    context = canvas.getContext('2d'),
-    imgData = context.createImageData(width, height);
-
-    canvas.height = height;
-    canvas.width = width;
-    
-    // fill imgData with colors from array
-    for(var i = 3; i < array.length; i++) {
-      imgData[i-3] = 255;
-      imgData[i -2] = 0.1;
-      imgData[i -1] = 0.2;
-      imgData[i] = 255; // Alpha channel
-    }
-    
-    // put data to context at (0, 0)
-   context.putImageData(imgData, 0, 0);
-    // output image
-    var img = new Image();
-    img.src = canvas.toDataURL('image/png');
-      img.onload = function(){
-    context.drawImage( img, 0, 0);
-  }
-    const doc = new jsPDF();
-    doc.addImage(img.src, "PNG", 0, 0, width, height);
-    doc.text("Hello world!", 10, 10);
-    doc.save("modra.pdf");
-  </script>
     <!-- Loading of unity webGL TODO: Move to separate file-->
     <script>
          var buildUrl = "Build";
